@@ -12,7 +12,7 @@
         </select>
       </div>
       <div class="h-[94px] flex justify-between items-center px-[135px]">
-        <img src="../../assets/Logo.svg" alt="">
+        <img src="../../assets/images/Logo.svg" alt="">
         <ul class="flex justify-center items-center gap-[48px]">
           <li class="">
             <router-link 

@@ -48,7 +48,7 @@
                     <p class="weight-[500] text-[20px]">Download App</p>
                      <div class="flex flex-col gap-[16px]">
                         <p class="text-[12px]">Save $3 with App New User Only</p>
-                        <img src="../../assets/app.svg" alt="">
+                        <img src="../../assets/images/app.svg" alt="">
                         <div class="flex justify-between text-[20px] mt-2">
                             <i class='bx bxl-facebook'></i>
                             <i class='bx bxl-twitter'></i>
