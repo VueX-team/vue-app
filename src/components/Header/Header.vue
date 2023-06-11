@@ -39,8 +39,8 @@
             />
             <i class="absolute right-0 bx bx-search text-[20px]"></i>
           </div>
-          <i class="bx bx-heart text-[23px]"></i>
-          <i class="bx bx-cart-alt text-[23px]"></i>
+          <router-link to="/wishlist" ><i class="bx bx-heart text-[23px]"></i></router-link>
+          <router-link to="/cart"><i class="bx bx-cart-alt text-[23px]"></i></router-link>
           <div
             @click="toggleSettings"
             class="w-[32px] h-[32px] bg-[#DB4444] text-white flex justify-center items-center rounded-full"
