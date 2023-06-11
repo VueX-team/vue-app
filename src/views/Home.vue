@@ -4,6 +4,8 @@ import Carousel from '@/components/Carousel.vue'
 import Container from '../components/Container.vue'
 import Header from '../components/Header/Header.vue'
 import { useProductStore } from '../stores/product'
+import Header from '../components/Header/Header.vue'
+import Footer from '../components/Footer/Footer.vue'
 
 const { getProduct } = useProductStore()
 </script>
@@ -113,4 +115,6 @@ const { getProduct } = useProductStore()
       </div>
     </Container>
   </section>
+
+  <Footer/>
 </template>

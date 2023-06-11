@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import Account from '../views/Account.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -12,6 +12,11 @@ const router = createRouter({
       path: '/about',
       name: 'About',
       component: () => import('../views/About.vue')
+    },
+    {
+      path: '/account',
+      name: 'Account',
+      component: Account
     },
     {
       path: '/contact',
