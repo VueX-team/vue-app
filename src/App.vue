@@ -3,11 +3,6 @@ import Container from '@/components/Container.vue'
 </script>
 
 <template>
-  <div>
-    <Container>
-      <router-view></router-view>
-    </Container>
-  </div>
+  <div><router-view></router-view></div>
 </template>
-
 <style lang="scss" scoped></style>
