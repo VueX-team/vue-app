@@ -1,22 +1,8 @@
 <template>
   <header>
-    <div class="bg-black">
-      <Container>
-        <div class="header-sale">
-          <p class="header-sale_p">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          </p>
-          <a href="" class="header-sale_a">Shop Now</a>
-          <select class="header-sale_select">
-            <option value="English">English</option>
-            <option value="Russian">Russian</option>
-          </select>
-        </div>
-      </Container>
-    </div>
-    <Container>
-      <div class="h-[94px] flex justify-between items-center">
-        <img src="../assets/images/Logo.svg" alt="" />
+    <Container class="container mx-auto">
+      <div class="h-[94px] flex justify-between items-center px-[135px]">
+        <img src="@/assets/images/Logo.svg" alt="" />
         <ul class="flex justify-center items-center gap-[48px]">
           <li class="">
             <router-link to="/">
@@ -42,7 +28,7 @@
 
         <div class="flex justify-center items-center gap-[24px] relative">
           <div
-            class="flex justify-between items-center bg-[#F5F5F5] px-5 py-2 w-[243px] rounded-sm"
+            class="flex justify-between items-center bg-[#F5F5F5] px-5 py-2 w-[243px] rounded-sm relative"
           >
             <input
               type="text"
@@ -51,10 +37,10 @@
               class="bg-[#F5F5F5] text-[12px] outline-none"
               placeholder="What are you looking for?"
             />
-            <i class="bx bx-search text-[20px]"></i>
+            <i class="absolute right-0 bx bx-search text-[20px]"></i>
           </div>
-          <i class="bx bx-heart text-[23px]"></i>
-          <i class="bx bx-cart-alt text-[23px]"></i>
+          <router-link to="/wishlist"><i class="bx bx-heart text-[23px]"></i></router-link>
+          <router-link to="/cart"><i class="bx bx-cart-alt text-[23px]"></i></router-link>
           <div
             @click="toggleSettings"
             class="w-[32px] h-[32px] bg-[#DB4444] text-white flex justify-center items-center rounded-full"
@@ -122,9 +108,7 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-header {
-}
+<style lang="scss" scoped>
 .header-sale {
   background-color: black;
   color: #fafafa;

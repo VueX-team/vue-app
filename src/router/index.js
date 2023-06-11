@@ -24,14 +24,34 @@ const router = createRouter({
       component: () => import('../views/Contact.vue')
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: () => import('../views/Login.vue')
+      path: '/wishlist',
+      name: 'Wishlist',
+      component: () => import('../views/Wishlist.vue')
+    },
+    {
+      path: '/signin',
+      name: 'Signin',
+      component: () => import('../views/Signin.vue')
     },
     {
       path: '/signup',
-      name: 'Register',
-      component: () => import('../views/Register.vue')
+      name: 'Signup',
+      component: () => import('../views/Signup.vue')
+    },
+    {
+      path: '/product/:id',
+      name: 'ProductOne',
+      component: () => import('../views/ProductOne.vue')
+    },
+    {
+      path: '/cart',
+      name: 'Cart',
+      component: () => import('../views/Cart.vue')
+    },
+    {
+      path: '/checkout',
+      name: 'Checkout',
+      component: () => import('../views/Checkout.vue')
     },
     {
       path: '/:pathMatch(.*)*',
