@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <section>
     <Container>
       <div class="flex gap-10">
@@ -615,6 +614,8 @@
       </div>
     </Container>
   </section>
+
+  <Footer/>
 </template>
 
 <script setup>
