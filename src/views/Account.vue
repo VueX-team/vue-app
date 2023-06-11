@@ -1,10 +1,8 @@
 <template>
-    <Header/>
     <section>
         <div class="container mx-auto px-[135px]">
             <div class="flex text-[14px] justify-between my-[80px]">
-                <p class=""><span class="opacity-50">Home</span> / My Account</p>
-                <p>Welcome! <span class="text-red-500">Md Rimel</span></p>
+                <p class=""><span class="opacity-50">Home</span> / Cart</p>
             </div>
             <div class="flex justify-between mb-[140px]">
                 <div class="flex flex-col gap-[18px] font-[500]">
@@ -71,7 +69,6 @@
         </div>
         
     </section>
-    <Footer/>
 </template>
 
 <script setup>

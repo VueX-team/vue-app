@@ -34,6 +34,16 @@ const router = createRouter({
       component: () => import('../views/Register.vue')
     },
     {
+      path: '/cart',
+      name: 'Cart',
+      component: () => import('../views/Cart.vue')
+    },
+    {
+      path: '/checkout',
+      name: 'Checkout',
+      component: () => import('../views/Checkout.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'Error',
       component: () => import('../views/Error.vue')
