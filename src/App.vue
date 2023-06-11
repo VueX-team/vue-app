@@ -1,10 +1,13 @@
-
 <script setup>
-import Container from '@/components/Container.vue'
+import Header from '@/components/Header/Header.vue'
+import Footer from '@/components/Footer/Footer.vue'
 </script>
 
 <template>
-  <div><router-view></router-view></div>
+  <div>
+    <Header />
+    <router-view></router-view>
+    <Footer />
+  </div>
 </template>
 <style lang="scss" scoped></style>
-

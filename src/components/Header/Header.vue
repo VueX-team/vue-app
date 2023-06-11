@@ -15,30 +15,22 @@
         <img src="../assets/images/Logo.svg" alt="">
         <ul class="flex justify-center items-center gap-[48px]">
           <li class="">
-            <router-link 
-              to="/"
-            >
+            <router-link to="/">
               <span class="ml-3">Home</span>
             </router-link>
           </li>
           <li class="">
-            <router-link 
-              to="/contact"
-            >
+            <router-link to="/contact">
               <span class="ml-3">Contact</span>
             </router-link>
           </li>
           <li class="">
-            <router-link 
-              to="/about"
-            >
+            <router-link to="/about">
               <span class="ml-3">About</span>
             </router-link>
           </li>
           <li class="">
-            <router-link 
-              to="/signup"
-            >
+            <router-link to="/signup">
               <span class="ml-3">Sign up</span>
             </router-link>
           </li>
@@ -99,11 +91,7 @@ onMounted(()=>{
 
 </script>
 
-
-
 <style scoped>
-
-
 .header-sale {
   background-color: black;
   color: #fafafa;
@@ -131,12 +119,10 @@ onMounted(()=>{
   right: 136px;
   color: #fafafa;
 }
-
 .setting{
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(75px);
 
   border-radius: 4px;
 }
-
 </style>

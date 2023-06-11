@@ -2,7 +2,7 @@
   <div>
     <div v-for="(item, index) in accordionItems" :key="index">
       <div
-        class="flex items-center justify-between py-2 px-4 cursor-pointer"
+        class="flex items-center justify-between py-2 pr-4 cursor-pointer"
         @click="() => toggleAccordion(index)"
       >
         <div>{{ item.title }}</div>

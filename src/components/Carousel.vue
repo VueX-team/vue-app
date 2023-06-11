@@ -23,7 +23,7 @@ const setActiveSlide = (index) => {
   <div class="relative p-5 my-10 bg-black rounded-md">
     <div class="h-[350px] text-white">
       <div v-for="(slide, index) in 5" :key="index" :class="{ hidden: activeSlide !== index }">
-        <div class="flex items-center justify-between px-10">
+        <div class="flex items-center justify-between pl-10">
           <div class="">
             <div class="flex items-center gap-10">
               <img :src="appleLogo" alt="" />
@@ -50,18 +50,16 @@ const setActiveSlide = (index) => {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .carousel-dots {
-  /* Configure the dot container styles */
   display: flex;
   justify-content: center;
   margin-top: 1rem;
 }
 
 .carousel-dot {
-  /* Configure the dot styles */
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: gray;
   margin: 0 5px;
@@ -69,7 +67,7 @@ const setActiveSlide = (index) => {
 }
 
 .carousel-dot.active {
-  /* Configure the active dot styles */
   background-color: orangered;
+  border: 2px solid white;
 }
 </style>

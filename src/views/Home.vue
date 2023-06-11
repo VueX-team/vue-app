@@ -1,26 +1,28 @@
-
 <script setup>
 import Accordion from '@/components/Accordion.vue'
 import Carousel from '@/components/Carousel.vue'
 import Container from '../components/Container.vue'
+import Header from '../components/Header/Header.vue'
 import { useProductStore } from '../stores/product'
 import Header from '../components/Header/Header.vue'
 import Footer from '../components/Footer/Footer.vue'
 
 const { getProduct } = useProductStore()
-
 </script>
 
 <template>
-<Header/>
- <div class="flex gap-10">
-    <div class="w-[20%] py-10 border-r border-slate-200">
-      <Accordion />
-    </div>
-    <div class="w-[80%]">
-      <Carousel />
-    </div>
-  </div>
+  <section>
+    <Container>
+      <div class="flex gap-10">
+        <div class="w-[20%] py-5 border-r border-slate-200">
+          <Accordion />
+        </div>
+        <div class="w-[80%]">
+          <Carousel />
+        </div>
+      </div>
+    </Container>
+  </section>
   <section>
     <Container>
       <div class="bg-black py-20 px-14 flex justify-between">
