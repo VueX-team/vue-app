@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container mx-auto">
+    <Container class="container mx-auto">
       <div class="h-[94px] flex justify-between items-center px-[135px]">
         <img src="@/assets/images/Logo.svg" alt="" />
         <ul class="flex justify-center items-center gap-[48px]">
@@ -39,7 +39,7 @@
             />
             <i class="absolute right-0 bx bx-search text-[20px]"></i>
           </div>
-          <router-link to="/wishlist" ><i class="bx bx-heart text-[23px]"></i></router-link>
+          <router-link to="/wishlist"><i class="bx bx-heart text-[23px]"></i></router-link>
           <router-link to="/cart"><i class="bx bx-cart-alt text-[23px]"></i></router-link>
           <div
             @click="toggleSettings"
@@ -84,11 +84,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   </header>
 </template>
 
 <script setup>
+import Container from '../Container.vue'
+
 import { ref, computed, onMounted } from 'vue'
 
 const user = ref(false)
@@ -131,7 +133,7 @@ onMounted(() => {
   background-color: black;
   outline-style: none;
   position: absolute;
-  right: 136px;
+  right: 0;
   color: #fafafa;
 }
 .setting {

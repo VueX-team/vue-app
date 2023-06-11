@@ -1,8 +1,8 @@
 <template>
-  <Container>
-    <footer>
+  <footer class="bg-black">
+    <Container>
       <div
-        class="grid grid-cols-5 gap-[87px] justify-between h-[376px] bg-black text-[#FAFAFA] px-[135px] py-[80px]"
+        class="grid grid-cols-5 gap-[87px] justify-between h-[376px] bg-black text-[#FAFAFA] py-[80px]"
       >
         <div class="flex flex-col gap-[24px]">
           <p class="weight-[700] text-[24px]">Exclusive</p>
@@ -64,12 +64,12 @@
       <div class="h-[68px] bg-black text-[#8b8b8b] flex justify-center items-center">
         <p class=""><i class="bx bx-copyright"></i> Copyright Rimel 2022. All right reserved</p>
       </div>
-    </footer>
-  </Container>
+    </Container>
+  </footer>
 </template>
 
 <script setup>
-import Container from '@/components/Container.vue'
+import Container from '../Container.vue'
 </script>
 
 <style lang="scss" scoped></style>
