@@ -1,6 +1,6 @@
 <template>
   <div class="container w-[1440px] mx-auto">
-    <slot />
+    <slot />  
   </div>
 </template>
 

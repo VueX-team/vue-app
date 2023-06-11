@@ -10,4 +10,12 @@ export const useProductStore = defineStore('product', () => {
   const getItem = (id) => {
     return state.list.find((el) => el.id == id)
   }
+
+  const setList = (list) => {
+    state.list = list
+  }
+
+  const getList = computed(() => state.list)
+
+  return { setList, getList }
 })
