@@ -1,3 +1,4 @@
+
 <script setup>
 import Accordion from '@/components/Accordion.vue'
 import Carousel from '@/components/Carousel.vue'

@@ -1,3 +1,4 @@
+
 <script setup>
 import Container from '@/components/Container.vue'
 </script>
@@ -6,3 +7,4 @@ import Container from '@/components/Container.vue'
   <div><router-view></router-view></div>
 </template>
 <style lang="scss" scoped></style>
+
