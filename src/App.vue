@@ -1,3 +1,7 @@
+<script setup>
+import Container from '@/components/Container.vue'
+</script>
+
 <template>
   <div>
     <Container>
@@ -5,7 +9,5 @@
     </Container>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>

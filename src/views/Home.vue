@@ -4,27 +4,12 @@ import Carousel from '@/components/Carousel.vue'
 </script>
 
 <template>
-  <div class="container">
-    <div class="accordion">
+  <div class="flex gap-10">
+    <div class="w-[20%] py-10 border-r border-slate-200">
       <Accordion />
     </div>
-    <div class="carousel">
+    <div class="w-[80%]">
       <Carousel />
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.container {
-  padding: 30px;
-  display: flex;
-}
-.accordion {
-  border-right: 1px solid #000;
-  flex: 1;
-  margin-right: 20px; /* Adjust margin as needed */
-}
-.carousel {
-  flex: 2;
-}
-</style>

@@ -1,14 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto">
     <slot />
   </div>
 </template>
-
-<script setup></script>
-
-<style lang="scss" scoped>
-.container {
-  width: 1440px;
-  margin: 0 auto;
-}
-</style>
