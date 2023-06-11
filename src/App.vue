@@ -1,9 +1,8 @@
+<script setup>
+import Container from '@/components/Container.vue'
+</script>
+
 <template>
   <div><router-view></router-view></div>
 </template>
-
-<script setup>
-
-</script>
-
 <style lang="scss" scoped></style>

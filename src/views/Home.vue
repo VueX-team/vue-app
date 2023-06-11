@@ -1,4 +1,22 @@
+<script setup>
+import Accordion from '@/components/Accordion.vue'
+import Carousel from '@/components/Carousel.vue'
+import Container from '../components/Container.vue'
+import { useProductStore } from '../stores/product'
+
+const { getProduct } = useProductStore()
+
+</script>
+
 <template>
+ <div class="flex gap-10">
+    <div class="w-[20%] py-10 border-r border-slate-200">
+      <Accordion />
+    </div>
+    <div class="w-[80%]">
+      <Carousel />
+    </div>
+  </div>
   <section>
     <Container>
       <div class="bg-black py-20 px-14 flex justify-between">
@@ -92,12 +110,3 @@
     </Container>
   </section>
 </template>
-
-<script setup>
-import Container from '../components/Container.vue'
-import { useProductStore } from '../stores/product'
-
-const { getProduct } = useProductStore()
-</script>
-
-<style lang="scss" scoped></style>
