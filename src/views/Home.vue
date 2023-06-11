@@ -95,7 +95,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>
@@ -157,7 +157,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>
@@ -298,7 +298,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>
@@ -360,7 +360,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>
@@ -509,7 +509,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>
@@ -565,7 +565,7 @@
               </div>
 
               <div
-                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
+                class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b cursor-pointer"
               >
                 <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
                   <span>Add To Cart </span>

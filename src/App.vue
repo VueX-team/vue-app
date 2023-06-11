@@ -9,7 +9,9 @@ import Footer from '@/components/Footer/Footer.vue'
     <div class="w-full bg-black">
       <HeaderTop />
     </div>
-    <Header />
+    <div class="w-full border-b">
+      <Header />
+    </div>
     <router-view></router-view>
     <div class="w-full bg-black">
       <Footer />
