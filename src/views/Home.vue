@@ -615,7 +615,7 @@
     </Container>
   </section>
 
-  <Footer/>
+  <Footer />
 </template>
 
 <script setup>
