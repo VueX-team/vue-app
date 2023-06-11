@@ -4,12 +4,15 @@ import Accordion from '@/components/Accordion.vue'
 import Carousel from '@/components/Carousel.vue'
 import Container from '../components/Container.vue'
 import { useProductStore } from '../stores/product'
+import Header from '../components/Header/Header.vue'
+import Footer from '../components/Footer/Footer.vue'
 
 const { getProduct } = useProductStore()
 
 </script>
 
 <template>
+<Header/>
  <div class="flex gap-10">
     <div class="w-[20%] py-10 border-r border-slate-200">
       <Accordion />
@@ -110,4 +113,6 @@ const { getProduct } = useProductStore()
       </div>
     </Container>
   </section>
+
+  <Footer/>
 </template>
