@@ -11,7 +11,7 @@
       </div>
       <div class="text-center py-32 pb-20">
         <div class="lg:flex gap-5">
-          <div class="w-full lg:w-[70%] flex items-center gap-10">
+          <div class="w-full lg:w-[60%] flex items-center gap-10">
             <div class="space-y-5">
               <div
                 class="bg-[#F5F5F5] shadow-lg rounded-xl h-[130px] w-[170px] flex items-center p-3"
@@ -26,7 +26,7 @@
               <img :src="product?.thumbnail" alt="" class="object-cover w-full rounded-xl" />
             </div>
           </div>
-          <div class="w-[30%] text-start pl-5">
+          <div class="text-start pl-5">
             <h1 class="text-3xl">{{ product?.title }}</h1>
             <div class="flex items-center w-full gap-1">
               <div class="flex items-center">
@@ -59,10 +59,12 @@
                 {{ el }}
               </button>
             </div>
-            <div class="flex gap-1">
+            <div class="flex gap-3">
               <AdderInput />
-              <button class="bg-[#DB4444] rounded-lg px-5 text-white">Buy Now</button>
-              <button class="bg-[#DB4444] rounded-lg px-5 text-2xl text-white">
+              <button class="bg-[#DB4444] rounded-md w-[150px] text-white">Buy Now</button>
+              <button
+                class="border border-black/30 rounded-md px-3 hover:bg-gray-200 text-2xl flex items-center justify-center"
+              >
                 <i class="bx bx-heart"></i>
               </button>
             </div>
