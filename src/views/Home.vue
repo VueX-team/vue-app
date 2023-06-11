@@ -614,15 +614,12 @@
       </div>
     </Container>
   </section>
-
-  <Footer/>
 </template>
 
 <script setup>
 import Accordion from '@/components/Accordion.vue'
 import Carousel from '@/components/Carousel.vue'
 import Container from '../components/Container.vue'
-import Header from '../components/Header/Header.vue'
 import Icons from '../components/Icons.vue'
 import { useProductStore } from '../stores/product'
 import { ref } from 'vue'

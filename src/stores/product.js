@@ -1,10 +1,10 @@
 import { computed, reactive } from 'vue'
 import { defineStore } from 'pinia'
-// import { products } from '@/constants/products'
+import { products } from '../contants/products'
 
 export const useProductStore = defineStore('product', () => {
   const state = reactive({
-    // list: products
+    list: products.data
   })
 
   const getItem = (id) => {
