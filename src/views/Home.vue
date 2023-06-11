@@ -9,7 +9,6 @@ const { getProduct } = useProductStore()
 </script>
 
 <template>
-  <Header />
   <section>
     <Container>
       <div class="flex gap-10">
