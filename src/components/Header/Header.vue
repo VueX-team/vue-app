@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="container mx-auto">
+    <div class="container mx-auto border-b">
       <div class="h-[94px] flex justify-between items-center px-[135px]">
         <img src="../assets/images/Logo.svg" alt="" />
         <ul class="flex justify-center items-center gap-[48px]">
