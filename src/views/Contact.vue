@@ -3,11 +3,9 @@ import ContactLeft from '@/components/ContactLeft.vue'
 import ContactInput from '@/components/ContactInput.vue'
 </script>
 <template>
-  <div class="container mx-auto py-20 pb-32">
-    <div class="flex gap-5 text-xl">
-      <span class="text-gray-500">Home</span>
-      <span class="text-gray-500">/</span>
-      <span>Contact</span>
+  <div class="container mx-auto px-[135px]">
+    <div class="flex text-[14px] justify-between my-[80px]">
+      <p class=""><span class="opacity-50">Home</span> / Contact</p>
     </div>
     <div class="flex gap-10 py-32">
       <div class="w-[33%] shadow-lg rounded-lg p-10">
