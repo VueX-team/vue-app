@@ -12,9 +12,9 @@
 </template>
 
 <script setup>
-import Icons from './Icons.vue'
+import Icons from "./Icons.vue";
 
-const props = defineProps(['icon', 'title'])
+const props = defineProps(["icon", "title"]);
 </script>
 
 <style lang="scss" scoped></style>

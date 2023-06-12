@@ -25,12 +25,19 @@ const router = useRouter()
 const addToCart = (id) => {
   const data = localStorage.getItem('data')
   if (!data) {
-    alert('Please, register or login before!')
+    toast.error('Please, register or login before!', {
+      autoClose: 1000,
+      theme: 'light'
+    })
     router.push('/signin')
   }
   const product = getItem(id)
 
   setItem(product)
+  toast.success('Card added succesfuly!', {
+    autoClose: 1000,
+    theme: 'light'
+  })
 }
 </script>
 

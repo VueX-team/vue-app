@@ -1,29 +1,13 @@
 import { ref, reactive } from 'vue'
 import { defineStore } from 'pinia'
-
+import { products } from '../contants/products'
+console.log(products)
 export const useWithlistStore = defineStore('wishlist', () => {
-  const wishlist = reactive([
-    {
-      id: 1,
-      quantity: 0,
-      title: 'iPhone 9',
-      description: 'An apple mobile which is nothing like apple',
-      price: 549,
-      discountPercentage: 12.96,
-      rating: 4.69,
-      stock: 94,
-      brand: 'Apple',
-      category: 'smartphones',
-      thumbnail: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
-      images: [
-        'https://i.dummyjson.com/data/products/1/1.jpg',
-        'https://i.dummyjson.com/data/products/1/2.jpg',
-        'https://i.dummyjson.com/data/products/1/3.jpg',
-        'https://i.dummyjson.com/data/products/1/4.jpg',
-        'https://i.dummyjson.com/data/products/1/thumbnail.jpg'
-      ]
-    }
-  ])
+  const wishlist = reactive([...products.data.slice(0, 5)])
+
+  function getAll(data) {
+    return wishlist
+  }
 
   function addWishlist(data) {
     wishlist.push(data)
@@ -45,5 +29,5 @@ export const useWithlistStore = defineStore('wishlist', () => {
     }
   }
 
-  return { wishlist, addWishlist, deleteWishlist, getWishlist }
+  return { wishlist, addWishlist, deleteWishlist, getWishlist, getAll }
 })
