@@ -12,13 +12,7 @@
       </div>
     </div>
 
-    <div
-      class="group-hover:flex hidden absolute bottom-0 w-full bg-[#000000] items-center justify-center py-3 rounded-b"
-    >
-      <h6 class="font-medium text-[16px] leading-[24px] text-[#FFFFFF]">
-        <span>Add To Cart </span>
-      </h6>
-    </div>
+    <AddToCartBtn :id="el.id" />
 
     <img class="h-full object-cover rounded-lg" :src="el.thumbnail" alt="image" />
   </div>
@@ -52,6 +46,8 @@
 </template>
 
 <script setup>
+import AddToCartBtn from './AddToCartBtn.vue'
+
 const props = defineProps(['el'])
 </script>
 

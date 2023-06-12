@@ -11,13 +11,13 @@
         </div>
 
         <div class="flex justify-between my-10">
-          <div v-for="(el, ind) in getList.slice(5, 9)" :key="ind">
+          <div v-for="(el, ind) in getList.slice(16, 20)" :key="ind">
             <ExploreCard :el="el" />
           </div>
         </div>
 
         <div v-if="is_show_all" class="flex justify-between mb-10 mt-[100px]">
-          <div v-for="(el, ind) in getList.slice(12, 16)" :key="ind">
+          <div v-for="(el, ind) in getList.slice(20, 24)" :key="ind">
             <ExploreCard :el="el" />
           </div>
         </div>

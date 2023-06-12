@@ -17,5 +17,5 @@ export const useProductStore = defineStore('product', () => {
 
   const getList = computed(() => state.list)
 
-  return { setList, getList }
+  return { setList, getList, getItem }
 })

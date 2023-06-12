@@ -7,13 +7,22 @@
         <div class="flex items-center justify-between pt-5 pb-10">
           <SectionText :text="'Browse By Category'" />
 
-          <Pagination />
+          <PaginationCustom />
         </div>
 
         <div class="flex justify-between my-10">
-          <div v-for="(el, ind) in category" :key="ind">
-            <CategoryCard :el="el" />
-          </div>
+          <swiper
+            :modules="modules"
+            :slides-per-view="5"
+            :space-between="25"
+            :scrollbar="{ draggable: true }"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="(el, ind) in category" :key="ind">
+              <CategoryCard :el="el" />
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </Container>
@@ -22,12 +31,24 @@
 
 <script setup>
 import Container from '../components/Container.vue'
-import Pagination from '../components/Pagination.vue'
+import PaginationCustom from '../components/Pagination.vue'
 import SectionTitle from '../components/SectionTitle.vue'
 import SectionText from '../components/SectionText.vue'
 import CategoryCard from '../components/CategoryCard.vue'
 
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
 import { ref } from 'vue'
+
+const onSwiper = (swiper) => {
+  console.log(swiper)
+}
+const onSlideChange = () => {
+  console.log('slide change')
+}
 
 const category = ref([
   {

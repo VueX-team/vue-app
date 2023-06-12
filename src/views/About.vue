@@ -1,11 +1,7 @@
 <template>
   <section class="about">
     <Container>
-      <div class="my-10 flex gap-3 text-[14px] leading-[21px]">
-        <h6 class="opacity-50"><span>Home</span></h6>
-        <h6 class="opacity-50"><span>/</span></h6>
-        <h6><span>About</span></h6>
-      </div>
+      <RouteInfo route="About"/>
 
       <div class="my-10 flex items-center justify-between">
         <div class="w-[40%]">
@@ -67,6 +63,7 @@ import Container from '../components/Container.vue'
 import Service from '../components/Service.vue'
 import InfoCard from '../components/InfoCard.vue'
 import EmployeeCard from '../components/EmployeeCard.vue'
+import RouteInfo from '../components/RouteInfo.vue'
 
 import { ref } from 'vue'
 

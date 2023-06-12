@@ -42,7 +42,7 @@
           </button>
           <div class="flex py-4 items-center justify-center gap-3">
             <h4 class="text-gray-500">Already have account?</h4>
-            <router-link to="/login" class="border-b border-black">Log in</router-link>
+            <router-link to="/signin" class="border-b border-black">Log in</router-link>
           </div>
         </form>
       </div>
