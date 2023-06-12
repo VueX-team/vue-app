@@ -1,7 +1,24 @@
 <template>
   <div>
     <div class="w-[400px] rounded bg-[#F5F5F5] flex items-end justify-center pt-5">
-      <img class="h-[400px] object-cover" :src="`src/assets/images/${el.image}`" alt="employee" />
+      <img
+        v-if="el.image == 'about-1.png'"
+        class="h-[400px] object-cover"
+        src="../assets/images/about-1.png"
+        alt="employee"
+      />
+      <img
+        v-else-if="el.image == 'about-2.png'"
+        class="h-[400px] object-cover"
+        src="../assets/images/about-2.png"
+        alt="employee"
+      />
+      <img
+        v-else-if="el.image == 'about-3.png'"
+        class="h-[400px] object-cover"
+        src="../assets/images/about-3.png"
+        alt="employee"
+      />
     </div>
 
     <h4 class="font-['Inter'] font-medium text-[32px] leading-[30px] mt-10 mb-3">
