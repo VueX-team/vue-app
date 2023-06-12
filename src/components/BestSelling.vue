@@ -13,7 +13,7 @@
         </div>
 
         <div class="flex justify-between my-10">
-          <div v-for="(el, ind) in getList.slice(5, 9)" :key="ind">
+          <div v-for="(el, ind) in getList.slice(8, 12)" :key="ind">
             <BestSellingCard :el="el" />
           </div>
         </div>

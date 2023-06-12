@@ -53,10 +53,10 @@
             <p class="text-[12px]">Save $3 with App New User Only</p>
             <img src="../../assets/images/app.svg" alt="" />
             <div class="flex justify-between text-[20px] mt-2">
-              <i class="bx bxl-facebook"></i>
-              <i class="bx bxl-twitter"></i>
-              <i class="bx bxl-instagram"></i>
-              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook hover:text-cyan-600"></i>
+              <i class="bx bxl-twitter hover:text-cyan-600"></i>
+              <i class="bx bxl-instagram hover:text-cyan-600"></i>
+              <i class="bx bxl-linkedin hover:text-cyan-600"></i>
             </div>
           </div>
         </div>

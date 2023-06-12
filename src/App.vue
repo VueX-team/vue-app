@@ -1,12 +1,16 @@
 <template>
   <div>
-    <div class="w-full bg-black">
-      <HeaderTop />
+    <div class="fixed top-0 z-50 w-full">
+      <div class="w-full bg-black">
+        <HeaderTop />
+      </div>
+      <div class="w-full border-b bg-white">
+        <Header />
+      </div>
     </div>
-    <div class="w-full border-b">
-      <Header />
-    </div>
-    <router-view></router-view>
+    <main class="mt-44 min-h-screen">
+      <router-view></router-view>
+    </main>
     <div class="w-full bg-black">
       <Footer />
     </div>
