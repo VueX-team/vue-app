@@ -1,8 +1,8 @@
 <template>
-  <Container>
-    <footer>
+  <footer class="bg-black">
+    <Container>
       <div
-        class="grid grid-cols-5 gap-[87px] justify-between h-[376px] bg-black text-[#FAFAFA] px-[135px] py-[80px]"
+        class="grid grid-cols-5 gap-[87px] justify-between h-[376px] bg-black text-[#FAFAFA] py-[80px]"
       >
         <div class="flex flex-col gap-[24px]">
           <p class="weight-[700] text-[24px]">Exclusive</p>
@@ -53,10 +53,10 @@
             <p class="text-[12px]">Save $3 with App New User Only</p>
             <img src="../../assets/images/app.svg" alt="" />
             <div class="flex justify-between text-[20px] mt-2">
-              <i class="bx bxl-facebook"></i>
-              <i class="bx bxl-twitter"></i>
-              <i class="bx bxl-instagram"></i>
-              <i class="bx bxl-linkedin"></i>
+              <i class="bx bxl-facebook hover:text-cyan-600"></i>
+              <i class="bx bxl-twitter hover:text-cyan-600"></i>
+              <i class="bx bxl-instagram hover:text-cyan-600"></i>
+              <i class="bx bxl-linkedin hover:text-cyan-600"></i>
             </div>
           </div>
         </div>
@@ -64,12 +64,12 @@
       <div class="h-[68px] bg-black text-[#8b8b8b] flex justify-center items-center">
         <p class=""><i class="bx bx-copyright"></i> Copyright Rimel 2022. All right reserved</p>
       </div>
-    </footer>
-  </Container>
+    </Container>
+  </footer>
 </template>
 
 <script setup>
-import Container from '@/components/Container.vue'
+import Container from '../Container.vue'
 </script>
 
 <style lang="scss" scoped></style>

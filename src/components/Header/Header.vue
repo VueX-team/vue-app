@@ -1,27 +1,28 @@
 <template>
-  <header>
-    <div class="container mx-auto">
-      <div class="h-[94px] flex justify-between items-center px-[135px]">
+  <header class="">
+    <Container class="container mx-auto">
+      <div class="h-[94px] flex justify-between items-center">
         <img src="@/assets/images/Logo.svg" alt="" />
+
         <ul class="flex justify-center items-center gap-[48px]">
           <li class="">
             <router-link to="/">
-              <span class="ml-3">Home</span>
+              <span>Home</span>
             </router-link>
           </li>
           <li class="">
             <router-link to="/contact">
-              <span class="ml-3">Contact</span>
+              <span>Contact</span>
             </router-link>
           </li>
           <li class="">
             <router-link to="/about">
-              <span class="ml-3">About</span>
+              <span>About</span>
             </router-link>
           </li>
           <li class="">
             <router-link to="/signup">
-              <span class="ml-3">Sign up</span>
+              <span>Sign up</span>
             </router-link>
           </li>
         </ul>
@@ -39,14 +40,15 @@
             />
             <i class="absolute right-0 bx bx-search text-[20px]"></i>
           </div>
-          <router-link to="/wishlist" ><i class="bx bx-heart text-[23px]"></i></router-link>
+          <router-link to="/wishlist"><i class="bx bx-heart text-[23px]"></i></router-link>
           <router-link to="/cart"><i class="bx bx-cart-alt text-[23px]"></i></router-link>
           <div
             @click="toggleSettings"
             class="w-[32px] h-[32px] bg-[#DB4444] text-white flex justify-center items-center rounded-full"
             :class="user ? '' : 'hidden'"
           >
-            <i class="bx bx-user text-[23px]"></i>
+            <!-- <i class="bx bx-user text-[23px]"></i> -->
+            <Icons name="user" />
           </div>
           <div
             class="w-[225px] h-[208px] absolute setting top-9 right-0 z-10"
@@ -84,12 +86,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   </header>
 </template>
 
 <script setup>
+import Container from '../Container.vue'
+import Icons from '../Icons.vue'
+
 import { ref, computed, onMounted } from 'vue'
+
+import { useAuthStore } from '../../stores/auth'
 
 const user = ref(false)
 const isSettings = ref(false)
@@ -99,8 +106,8 @@ const toggleSettings = () => {
 }
 
 onMounted(() => {
-  const token = localStorage.getItem('token')
-  if (token) {
+  const data = localStorage.getItem('data')
+  if (data) {
     user.value = true
   }
 })
@@ -131,7 +138,7 @@ onMounted(() => {
   background-color: black;
   outline-style: none;
   position: absolute;
-  right: 136px;
+  right: 0;
   color: #fafafa;
 }
 .setting {
@@ -139,5 +146,9 @@ onMounted(() => {
   backdrop-filter: blur(75px);
 
   border-radius: 4px;
+}
+
+.router-link-exact-active {
+  border-bottom: 1px solid gray;
 }
 </style>

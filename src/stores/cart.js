@@ -15,7 +15,11 @@ export const useCartStore = defineStore('cart', () => {
     state.list = list
   }
 
+  const setItem = (item) => {
+    state.list.push(item)
+  }
+
   const getList = computed(() => state.list)
 
-  return { setList, getList }
+  return { setList, setItem, getItem, getList }
 })

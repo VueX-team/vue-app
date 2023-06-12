@@ -1,48 +1,28 @@
 <template>
-  <div>
-    <div class="container mx-auto header-sale">
-      <p class="header-sale_p">
-        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-      </p>
-      <a href="" class="header-sale_a">Shop Now</a>
-      <select class="header-sale_select">
+  <Container>
+    <div class="flex items-center justify-between py-3">
+      <div></div>
+
+      <div class="flex items-center justify-center gap-5">
+        <h6 class="text-[#FAFAFA]">
+          <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</span>
+        </h6>
+        <a href="#" class="text-white underline">Shop Now</a>
+      </div>
+
+      <select class="bg-black outline-none text-white">
         <option value="English">English</option>
         <option value="Russian">Russian</option>
       </select>
     </div>
-  </div>
+  </Container>
 </template>
 
-<script setup></script>
+<script setup>
+import Container from '../Container.vue'
+</script>
 
 <style lang="scss" scoped>
-.header-sale {
-  background-color: black;
-  color: #fafafa;
-  display: flex;
-  justify-content: center;
-  height: 48px;
-  align-items: center;
-  position: relative;
-}
-
-.header-sale_p {
-  font-size: 14px;
-}
-
-.header-sale_a {
-  font-weight: 600;
-  margin-left: 8px;
-  color: #fafafa;
-}
-
-.header-sale_select {
-  background-color: black;
-  outline-style: none;
-  position: absolute;
-  right: 136px;
-  color: #fafafa;
-}
 .setting {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(75px);
