@@ -34,7 +34,7 @@
 import moment from 'moment'
 import { ref, onMounted } from 'vue'
 
-const countdownDate = ref('2023-06-15 23:59:59')
+const countdownDate = ref('2023-08-15 23:59:59')
 const countdownInterval = ref(null)
 const days = ref(0)
 const hours = ref(0)
